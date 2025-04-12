@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="searchstyle.css">
+  <link rel="shortcut icon" href="static/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>ZikRme Search </title>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a onclick="history.back()">Home</a></li>
+      <li><a href="#tally-open=n94kVQ&tally-emoji-text=👋&tally-emoji-animation=wave">Contact Us</a></li>
+    </ul>
+  </nav>
+<div title="Search about ZikRme" id="search-container">
+  <img id="logo" src="https://connect.zikrme.in/web/image/website/1/logo/ZikRme?unique=e5079fc" alt="ZikRme Logo">
+  <form action="#" method="get" onsubmit="return redirect(this)">
+    <input type="text" id="search-box" name="q" placeholder="Search...">
+    <button type="submit" id="search-button">Search</button>
+  </form>
+</div>
+
+
+<footer title="ZikRme">
+Powered by ZikRme
+</footer>
+
+<script>
+function redirect(form) {
+  var query = form.q.value;
+  if(query.trim() == "") return false; //Prevent empty search
+  window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query + " ZikRme.com");
+  return false;
+}
+</script>
+
+<script src="scriptsearch.js"></script>
+<script async src="https://tally.so/widgets/embed.js"></script>
+</body>
+</html>
