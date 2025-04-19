@@ -14,13 +14,13 @@
     <meta property="og:title" content="ZikRme WorkSpace" />
     <meta property="og:description"
         content="Explore, Travel & Book with ZikRme. Join our team and discover exciting travel opportunities." />
-    <meta property="og:image" content="static/logo.png" />
+    <meta property="og:image" content="static/icon-dark.png" />
     <meta property="og:url" content="https://zikrme.com" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="ZikRme WorkSpace" />
     <meta name="twitter:description"
         content="Explore, Travel & Book with ZikRme. Join our team and discover exciting travel opportunities." />
-    <meta name="twitter:image" content="static/logo.png" />
+    <meta name="twitter:image" content="static/icon-dark.png" />
     <title>WorkSpace | ZikRme</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -30,74 +30,34 @@
 <body class="">
     <header class="hero" itemscope>
         <h1 title="ZikRme WorkSpace">ZikRme WorkSpace</h1>
-        <p>Explore, Travel & Book with ZikRme</p>
-        <button onclick='window.location.href="https://blog.zikrme.in/"'>
-            Read Travel Blogs</button><button onclick="window.location.href='https://connect.zikrme.in/growthroom'"
-            aria-label="ZikRme Growth Room" itemscope itemprop="ZikRme Growth Room">
-            ZikRme Growth Room
-        </button>
+        <p>Explore, Travel & Book with ZikRme</p><button onclick='window.location.href="https://blog.zikrme.in/"'>Read
+            Travel Blogs</button><button onclick="window.location.href='/growthroom/index.html'"
+            aria-label="ZikRme Growth Room" itemscope itemprop="ZikRme Growth Room">ZikRme Growth Room </button>
     </header>
-    <nav class="nav">
-        <a href="https://blog.zikrme.in/">Blog</a><a
+    <nav class="nav"><a href="https://blog.zikrme.in/">Blog</a><a
             href="https://connect.zikrme.in/jobinternship">Career</a><a href="#team">Team</a><a
             href="#tally-open=n94kVQ&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=head-shake&tally-auto-close=0">Contact</a>
     </nav>
     <section class="hiring" id="Hiring">
-        <h2 title="We are Hiring" role="tab">
-            <i class="fa fa-bullhorn"></i>We are Hiring
-        </h2>
+        <h2 title="We are Hiring" role="tab"><i class="fa fa-bullhorn"></i>We are Hiring </h2>
         <div class="marquee">
             <p>Join our team and be a part of something amazing</p>
         </div>
         <div class="marquee">
-            <p>
-                We are looking for talented individuals to join our team. If you are
-                passionate about travel, technology, and innovation, we want to hear
-                from you!
-            </p>
-        </div>
-        <button class="apply-button" onclick="applyNow('hiring')">
-            Apply Now
-        </button>
+            <p>We are looking for talented individuals to join our team. If you are passionate about travel, technology,
+                and innovation, we want to hear from you! </p>
+        </div><button class="apply-button" onclick="applyNow('hiring')">Apply Now </button>
     </section>
     <section class="internship" id="internship">
-        <h2 title="Internship Opportunities" role="tab">
-            <i class="fa fa-graduation-cap"></i>Internship Opportunities
+        <h2 title="Internship Opportunities" role="tab"><i class="fa fa-graduation-cap"></i>Internship Opportunities
         </h2>
         <div class="marquee">
             <p>Gain valuable experience and skills with our internship program.</p>
         </div>
         <div class="marquee">
             <p>Kickstart your career with ZikRme's exciting internships.</p>
-        </div>
-        <button class="apply-button" onclick="applyNow('internship')">
-            Apply Now
-        </button>
+        </div><button class="apply-button" onclick="applyNow('internship')">Apply Now </button>
     </section>
-    <!--section-- class="booking" id="booking">
-      <h2>Book Now</h2>
-      <div class="booking-form">
-        <input
-          type="text"
-          id="destination"
-          placeholder="Enter Destination"
-        /><br /><label for="check-in">Check-in:</label><br /><input
-          type="text"
-          id="check-in"
-          placeholder="YYYY-MM-DD"
-          onfocus="(this.type='date')"
-          onblur="(this.type='text')"
-        /><br /><label for="check-out">Check-out:</label><br /><input
-          type="text"
-          id="check-out"
-          placeholder="YYYY-MM-DD"
-          onfocus="(this.type='date')"
-          onblur="(this.type='text')"
-        /><br /><button onclick="searchFlights()">Search Cab</button
-        ><button onclick="searchHotels()">Search Hotels</button
-        ><button onclick="searchRestaurants()">Search Restaurants</button>
-      </div>
-    </!--section-->
     <section class="categories">
         <h2><i class="fa fa-globe"></i>Explore by Category</h2>
         <div class="category-container">
@@ -118,131 +78,85 @@
     <section class="reviews">
         <h2 role="tab">What Our Travelers Says</h2>
         <div tabindex="0" class="review">
-            <blockquote>
-                “ZikRme made my trip to Goa seamless! Loved the experience.” – Anjali
-                R.
-            </blockquote>
+            <blockquote>“ZikRme made my trip to Goa seamless! Loved the experience.” – Anjali R. </blockquote>
         </div>
         <div tabindex="0" class="review">
-            <blockquote>
-                “Best travel deals ever! Booked my honeymoon with ZikRme.” – Rohan P.
-            </blockquote>
+            <blockquote>“Best travel deals ever! Booked my honeymoon with ZikRme.” – Rohan P. </blockquote>
         </div>
     </section>
     <fieldset class="newsletter" id="newsletter">
-        <legend>Subscribe for Travel Deals</legend>
-        <input autocomplete="email" type="email" id="emailInput" placeholder="Enter your email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /><button
+        <legend>Subscribe for Travel Deals</legend><input autocomplete="email" type="email" id="emailInput"
+            placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /><button
             onclick="subscribeNewsletter()">Subscribe</button>
     </fieldset>
     <section class="team" id="team">
         <h2><i class="fa fa-coffee"></i>Meet Our Team</h2>
         <div class="team-container">
             <div tabindex="0" class="team-member"
-                title="Anmol is the Founder and CEO, leading the vision and strategy of the company." itemscope>
-                <img loading="lazy" itemprop="image" src="https://connect.zikrme.in/web/image/503-6e8cc864/62695044397862603222.svg"
-                    alt="Team Member" />
+                title="Anmol is the Founder and CEO, leading the vision and strategy of the company." itemscope><img
+                    loading="lazy" itemprop="image"
+                    src="https://connect.zikrme.in/web/image/503-6e8cc864/62695044397862603222.svg" alt="Team Member" />
                 <h3 itemprop="name">Anmol</h3>
-                <p itemprop="role">
-                    <i class="fa fa-certificate" style="color: #05f"></i>Founder & CEO
-                </p>
+                <p itemprop="role"><i class="fa fa-certificate" style="color: #05f"></i>Founder & CEO </p>
             </div>
             <div tabindex="0" class="team-member"
-                title="Deepak is the Co-Founder and CFO, managing the financial strategy and operations." itemscope>
-                <img loading="lazy" itemprop="image" src="https://connect.zikrme.in/web/image/721-8ab9ee75/deepak%2520.svg"
-                    alt="Team Member" />
+                title="Deepak is the Co-Founder and CFO, managing the financial strategy and operations." itemscope><img
+                    loading="lazy" itemprop="image"
+                    src="https://connect.zikrme.in/web/image/721-8ab9ee75/deepak%2520.svg" alt="Team Member" />
                 <h3 itemprop="name">Deepak</h3>
-                <p itemprop="role">
-                    <i class="fa fa-certificate" style="color: #05f"></i>Co-Founder &
-                    CFO
-                </p>
+                <p itemprop="role"><i class="fa fa-certificate" style="color: #05f"></i>Co-Founder & CFO </p>
             </div>
             <div tabindex="0" class="team-member"
-                title="Shriya is the CTO, overseeing the technology and development teams." itemscope itemtype="http://schema.org/Person">
-                <img loading="lazy" itemprop="image"
+                title="Shriya is the CTO, overseeing the technology and development teams." itemscope
+                itemtype="http://schema.org/Person"><img loading="lazy" itemprop="image"
                     src="https://connect.zikrme.in/web/image/504-558d2449/InShot_20250210_235403262%2520%25281%2529.webp"
                     alt="Team Member" />
                 <h3 itemprop="name">Shriya</h3>
                 <p itemprop="role"><i class="fa fa-certificate" style="color: #05f"></i>CTO</p>
             </div>
             <div tabindex="0" class="team-member"
-                title="Deepanshu is the CMO, responsible for marketing strategies and brand management." itemscope itemtype="http://schema.org/Person">
-                <img loading="lazy" itemprop="image" src="https://connect.zikrme.in/web/image/502-d5af4189/0000000000000.webp"
-                    alt="Team Member" />
+                title="Deepanshu is the CMO, responsible for marketing strategies and brand management." itemscope
+                itemtype="http://schema.org/Person"><img loading="lazy" itemprop="image"
+                    src="https://connect.zikrme.in/web/image/502-d5af4189/0000000000000.webp" alt="Team Member" />
                 <h3 itemprop="name">Deepanshu</h3>
                 <p itemprop="role"><i class="fa fa-certificate" style="color: #05f"></i>CMO</p>
             </div>
             <div tabindex="0" class="team-member"
-                title="Divesh is the COO, managing day-to-day operations and ensuring efficiency." itemscope itemtype="http://schema.org/Person">
-                <img loading="lazy" itemprop="image" src="https://connect.zikrme.in/web/image/719-91436158/Pic.svg" alt="Team Member" />
+                title="Divesh is the COO, managing day-to-day operations and ensuring efficiency." itemscope
+                itemtype="http://schema.org/Person"><img loading="lazy" itemprop="image"
+                    src="https://connect.zikrme.in/web/image/719-91436158/Pic.svg" alt="Team Member" />
                 <h3 itemprop="name">Divesh</h3>
                 <p itemprop="role"><i class="fa fa-certificate" style="color: #05f"></i>COO</p>
             </div>
         </div>
     </section>
     <section class="contact" id="contact">
-        <h2>
-            <i class="fa fa-map-marker"></i>Contact Us
-            <a class="clink"
+        <h2><i class="fa fa-map-marker"></i>Contact Us <a class="clink"
                 href="#tally-open=n94kVQ&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=head-shake&tally-auto-close=0">#</a>
         </h2>
-        <p>
-            <i class="fa fa-envelope"></i>Email:
-            <a class="email-select" href="mailto:zikrmeofficial@gmail.com">ZikRmeofficial@gmail.com</a>
-        </p>
-        <iframe loading="lazy"
+        <p><i class="fa fa-envelope"></i>Email: <a class="email-select"
+                href="mailto:zikrmeofficial@gmail.com">ZikRmeofficial@gmail.com</a></p><iframe loading="lazy"
             src="https://maps.google.com/maps?q=Meerut%2C%20Uttar%20Pradesh%2C%20India&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
             title="Meerut, Uttar Pradesh, India" aria-label="Meerut, Uttar Pradesh, India"></iframe>
-        <script type="text/javascript">
-            function validateForm() {
-                if (isEmpty(document.getElementById("data_4").value.trim())) {
-                    alert("EMAIL is required!");
-                    return false;
-                }
-                if (!validateEmail(document.getElementById("data_4").value.trim())) {
-                    alert("EMAIL must be a valid email address!");
-                    return false;
-                }
-                return true;
-            }
-            function isEmpty(str) {
-                return str.length === 0 || !str.trim();
-            }
-            function validateEmail(email) {
-                var re =
-                    /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-                return isEmpty(email) || re.test(email);
-            }
-        </script>
+        <script
+            type="text/javascript">function validateForm() { if (isEmpty(document.getElementById("data_4").value.trim())) { alert("EMAIL is required!"); return false; } if (!validateEmail(document.getElementById("data_4").value.trim())) { alert("EMAIL must be a valid email address!"); return false; } return true; } function isEmpty(str) { return str.length === 0 || !str.trim(); } function validateEmail(email) { var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i; return isEmpty(email) || re.test(email); } </script>
     </section>
-
     <div class="footer">
         <h3>Follow Us</h3>
-        <div class="social-icons">
-            <a class="fb" href="https://www.facebook.com/zikme.in/" aria-label="Follow us on Facebook" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fa fa-facebook"></i>
-            </a>
-            <a class="wp" href="https://api.whatsapp.com/send/?phone=%2B917310624101&text=Hello%2C"
-                aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-whatsapp"></i>
-            </a>
-            <a class="insta" href="https://www.instagram.com/zikrmeofficial/" aria-label="Follow us on Instagram"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-instagram"></i>
-            </a>
-            <a class="yt" href="https://www.youtube.com/@ZikRme" aria-label="Subscribe to our YouTube channel"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-youtube"></i>
-            </a>
-        </div>
+        <div class="social-icons"><a class="fb" href="https://www.facebook.com/zikme.in/"
+                aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-facebook"></i></a><a class="wp"
+                href="https://api.whatsapp.com/send/?phone=%2B917310624101&text=Hello%2C"
+                aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-whatsapp"></i></a><a class="insta" href="https://www.instagram.com/zikrmeofficial/"
+                aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-instagram"></i></a><a class="yt" href="https://www.youtube.com/@ZikRme"
+                aria-label="Subscribe to our YouTube channel" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-youtube"></i></a></div>
         <p>&copy; 2025 ZikRme</p>
-        <p>
-            <a href="https://zikrme.com/privacy-policy">Privacy Policy</a> |
-            <a href="https://zikrme.com/terms-condition">Terms & Conditions</a>
-        </p>
+        <p><a href="https://zikrme.com/privacy-policy">Privacy Policy</a>| <a
+                href="https://zikrme.com/terms-condition">Terms & Conditions</a></p>
     </div>
-
     <script src="script.js"></script>
     <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
