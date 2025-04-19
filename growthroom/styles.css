@@ -17,7 +17,14 @@
     --button-bg-r: linear-gradient(to left, var(--secondary-color), var(--primary-color));
     --b-radius: 0px 0px 12px 12px;
 }
-
+*{
+    transition:all .5s;
+    cursor: default;
+}
+*::selection{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
 /* General Styles */
 html {
     scroll-behavior: smooth;
@@ -95,11 +102,96 @@ button{
 button:hover{
         background: var(--button-bg-r);
         scale: 1.02; }
+.btn{
+    text-align: center;
+}
+.ids {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
 
+    a{
+        text-decoration: none;
+        background: rgba(255, 87, 51, .5);
+        padding: 5px;
+        margin: 5px;
+        color: var(--light-bg);
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    a:hover{
+        background: var(--button-bg-r);
+    }
+    a:hover::after{
+        content: ' >';
+    }
+}
+
+.h2h{
+h2{
+        text-align: left;
+}
+h2::after{
+        content: ' >>';
+}
+}
+.indent{
+    margin-left: 10px;
+} 
 footer{
     background: rgba(0, 0, 0, .5);
     backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 2rem 2rem 0px 0px;
     text-align: center;
+
+    h3{
+        background: linear-gradient(to right, transparent 0%, rgba(255, 87, 51, 0.3) 15%, rgba(255, 145, 77, 0.3) 75%, transparent 100%);
+    }
+    a{
+        text-decoration: none;
+        color: var(--white);
+    }
+}
+
+footer .social-icons {
+    margin: 10px 0;
+    a{
+        color: var(--white);
+        margin: 0 10px;
+        font-size: 24px
+    }
+}
+
+.social-icons {
+    .fb:is(:hover, :focus) {
+        color: blue;
+        filter: drop-shadow(0 0 10px blue)
+    }
+
+    .wp:is(:hover, :focus) {
+        color: green;
+        filter: drop-shadow(0 0 10px green)
+    }
+
+    .insta:is(:hover, :focus) {
+        color: #909;
+        filter: drop-shadow(0 0 10px #909)
+    }
+
+    .yt:is(:hover, :focus) {
+        color: red;
+        filter: drop-shadow(0 0 10px red)
+    }
+}
+
+footer p {
+    font-size: 14px
+}
+
+@media screen and (max-width: 700px) {
+    .ids{
+        display:flex;
+        flex-wrap: wrap;
+    }
 }
