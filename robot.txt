@@ -1,4 +1,4 @@
-```
+
 User-agent: *
 Canonical: https://workspace.zikrme.in
 Sitemap: https://workspace.zikrme.in/sitemap.xml
@@ -9,4 +9,3 @@ Disallow: /script.js
 Disallow: /scriptsearch.js
 Disallow: /searchstyle.css
 Disallow: /styles.css
-```
