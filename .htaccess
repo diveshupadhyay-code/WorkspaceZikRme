@@ -1,0 +1,6 @@
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^workspace.zikrme.in$
+RewriteRule ^(.*)$ https://workspace.zikrme.in/$1 [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
