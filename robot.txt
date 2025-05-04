@@ -1,0 +1,12 @@
+```
+User-agent: *
+Canonical: https://workspace.zikrme.in
+Sitemap: https://workspace.zikrme.in/sitemap.xml
+Disallow: /static/
+Disallow: /google3e9d5aada25c8311.html
+Disallow: /growthroom/styles.css
+Disallow: /script.js
+Disallow: /scriptsearch.js
+Disallow: /searchstyle.css
+Disallow: /styles.css
+```
